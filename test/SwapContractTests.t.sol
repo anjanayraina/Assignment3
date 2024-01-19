@@ -22,7 +22,6 @@ contract SwapContractTest is Test {
         vm.stopPrank();
     }
 
-
     function test_balanceOfTokenA() public {
         assertEq(tokenA.balanceOf(address(0x123)), 1000 * (10 ** tokenA.decimals()));
     }
