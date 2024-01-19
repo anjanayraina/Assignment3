@@ -26,6 +26,12 @@ contract SwapContract is Ownable {
      * @param owner The owner of the contract
      */
     constructor(IERC20 _tokenA, IERC20 _tokenB, uint256 _rate, address owner) Ownable(owner) {
+           assembly {
+       if eq(_tokenA , 0) { revert(0, 0) }
+       if eq(_tokenB , 0) { revert(0, 0) }
+       if eq(_rate , 0) { revert(0, 0) }
+       if eq(owner , 0) { revert(0, 0) }
+   }
         tokenA = _tokenA;
         tokenB = _tokenB;
         rate = _rate;
