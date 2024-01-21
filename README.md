@@ -8,9 +8,6 @@ Allows users to swap a specified amount of Token A for Token B. The output amoun
 ## `swapBforA(uint256 amount)`
 Allows users to swap a specified amount of Token B for Token A. The output amount of Token A is calculated by dividing the input amount of Token B by the same fixed rate.
 
-Feel free to use this markdown code in your GitHub readme!
-
-
 # How to run
 1.  **Install Foundry**
 
